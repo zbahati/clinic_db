@@ -71,8 +71,6 @@
 ## 🚀 Live Demo <a name="live-demo"></a>
 
 
-- [COMING SOON](<replace-with-your-deployment-URL>)
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
