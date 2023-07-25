@@ -73,3 +73,7 @@ CREATE TABLE medic_treat_relation(
  -- FOREIGN KEY FOR medecal_histories and treatments
 ALTER TABLE medic_treat_relation ADD CONSTRAINT treatment_fk FOREIGN KEY(treatment_id) REFERENCES treatments(id);
 ALTER TABLE medic_treat_relation ADD CONSTRAINT medical_histories_fk FOREIGN KEY(medical_histories_id) REFERENCES medical_histories(id);
+
+-- FOREIGN KEY INDEX FOR medecal_histories and treatments
+CREATE INDEX treatment_id_asc ON  medic_treat_relation(treatment_id ASC);
+CREATE INDEX medical_histories_id_asc ON medic_treat_relation (medical_histories_id ASC);
